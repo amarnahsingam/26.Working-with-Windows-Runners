@@ -1,0 +1,13 @@
+name: Checkout Example
+
+on: push
+
+jobs:
+  checkout-demo:
+    runs-on: windows-latest
+    steps:
+      - name: PowerShell Variables
+        run: |
+          $name = "GitHub Actions"
+
+          Write-Host "Welcome to $name"
